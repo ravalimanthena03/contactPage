@@ -1,0 +1,201 @@
+<main class="main">
+  <div>
+    <nav class="navbar">
+        <img src="https://www.guvi.in/assets/CPYoUJqK-guvilogo-hcl.webp" alt="logo">
+        <ul>
+            <li>Courses</li>
+            <li>LIVE Classes</li>
+            <li>Practice</li>
+            <li>Resources</li>
+            <li>Our Solutions</li>
+        </ul>
+        <button style="color: #0AD652; font-weight: bold;">Login</button>
+        <button style="color: white; background-color: #0AD652; padding: 10px; border-radius: 10%;">Sign Up</button>
+    </nav>
+    <section class="contact">
+        <div class="container">
+            <div class="contactInfo">
+                <div class="content">
+                    <h2>Contact Us</h2>
+                    <p>Let us know your queries, feedbacks and enquiries. We are here to support you 24/7.</p>
+                    <hr>
+                </div>
+                <div class="box">
+                    <div class="icon"><img src="https://www.guvi.in/assets/Dln4fx0b-phone.webp" alt="phoneicon"></div>
+                    <div class="text">
+                        <h3>Give us a call</h3>
+                        <p>+91 9736097320</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><img src="https://www.guvi.in/assets/DRGUPHXp-message.webp" alt="emailicon"></div>
+                    <div class="text">
+                        <h3>Write to us</h3>
+                        <p>cs&#64;guvi.in</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><img src="https://www.guvi.in/assets/BrgqbmZY-location.webp" alt="locationicon"></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p> 
+                            <span>Visit us in Chennai &#64;</span>
+                            IITM Research park - phase 2, module #9, 3rd floor, D block, Kanagam Rd, Tharamani, Chennai, Tamil Nadu 600113
+                            <br>
+                            <span>Visit us in Noida &#64;</span>
+                            A11, HCL Corporation Pvt. Ltd, Block A, Sector 3, Noida, Uttar Pradesh 201307
+                        </p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <form  id="contactForm" (submit)="onSubmit($event)">
+              <h2>Say <span>Hello!</span></h2>
+                <h4>Feel free to stop by and say hi !</h4>
+              <div class="inputBox">
+                <h3>Name <span>*</span></h3>
+                <input type="text" id="name" required>
+              </div>
+              <div class="inputBox">
+                <h3>E-mail id <span>*</span></h3>
+                <input type="text" id="email" required>
+              </div>
+              <div class="inputBox">
+                <h3>Contact Number <span>*</span></h3>
+                <input type="text" id="contact" required>
+              </div>
+              <div class="inputBox">
+                <h3>Subject <span>*</span></h3>
+                <input type="text" id="subject" required>
+              </div>
+              <div class="inputBox">
+                <h3>Message <span>*</span></h3>
+                <textarea id="message" rows="4" cols="50" required></textarea>
+              </div>
+                <button type="submit">Send</button>
+            </form>  
+         
+     <div *ngIf="successMessage" class="success-message" style="color: green; margin-top: 10px;">
+      {{ successMessage }}
+     </div>
+
+
+      <div *ngIf="error" class="error-message" style="color: red; margin-top: 10px;">
+      There was an error sending your message. Please try again later.
+     </div> 
+      </div>
+    </section>
+    <footer style="background-color: #2a2a2a; padding: 50px;">
+        <div style="display: flex; color:grey; flex-wrap: wrap; justify-content: space-evenly;">
+            <section>
+                <ul>
+                    <b style="display: flex; color:white; flex-wrap: wrap; justify-content: space-evenly;">Zen Class </b>
+                    <li>Full Stack Development</li>
+                    <li>Automation & Testing</li>
+                    <li>Data Science</li>
+                    <li>UI/UX</li>
+                    <li>DevOps</li>
+                    <li>Data Engineering</li>
+                    <li>Business Analytics with <br> Digital Marketing</li>
+                    <li>All Programs</li>
+                </ul>
+            </section>
+            <section>
+                <ul style="list-style-type: none;">
+                    <b style="display: flex; color:white; flex-wrap: wrap; justify-content: space-evenly;">Popular Courses</b>
+                    <li>Python - IITM Pravartak <br> Certified</li>
+                    <li>Java</li>
+                    <li>Mobile Hacking</li>
+                    <li>C Programming</li>
+                    <li>AWS</li>
+                    <li>Angular</li>
+                    <li>Dark Web</li>
+                    <li>All Courses</li>
+                </ul>
+            </section>
+            <section>
+                <ul>
+                    <b style="display: flex; color:white; flex-wrap: wrap; justify-content: space-evenly;">Self-Paced Courses</b>
+                    <li>Premium Pass</li>
+                    <li>Courses Library</li>
+                    <li>Free Library</li>
+                    <li>Combos</li>
+                    <br>
+                    <b style="display: flex; color:white; flex-wrap: wrap; justify-content: space-evenly;">Practice Platforms</b>
+                    <li>Codekata</li>
+                    <li>Webkata</li>
+                    <li>Debugging</li>
+                    <li>IDE</li>
+                </ul>
+            </section>
+            <section>
+                <ul>
+                    <b style="display: flex; color:white; flex-wrap: wrap; justify-content: space-evenly;">Products</b>
+                    <li>HackerKid</li>
+                    <li>Placement Preparation</li>
+                    <li>GUVI for Corporates</li>
+                    <br>
+                    <b>Resources</b>
+                    <li style="display: flex; color:white; flex-wrap: wrap; justify-content: space-evenly;">Learn Hub <span
+                            style="padding: 3px 5px; background-color: red; border-radius: 5%; border: none;">New</span>
+                    </li>
+                    <li>Blog</li>
+                    <li>Web Stories</li>
+                    <li>Forum</li>
+                    <li>Rewards</li>
+                    <li>Refer a friend</li>
+                    <li>Become an Affiliate</li>
+                </ul>
+            </section>
+            <section>
+                <ul>
+                    <b style="display: flex; color:white; flex-wrap: wrap; justify-content: space-evenly;">Company</b>
+                    <li>Refund Policy</li>
+                    <li>FAQs</li>
+                    <li>Contact Us</li>
+                    <li>About Us</li>
+                </ul>
+            </section>
+        </div>
+        <hr width="90%">
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-evenly; color: grey; margin-top: 50px;">
+            <section>
+                <div style="display: flex; justify-content: start; align-items: center;"><img
+                        src="https://www.guvi.in/assets/ClRfE5Qq-guvi-logo.webp" alt="" width="150px">
+                    <span style="font-weight: bold; font-size: x-large;"> GUVI </span>
+                </div>
+                <p>GUVI is an IIT-M & IIM-A incubated Ed-tech company that focuses on providing personalized <br>
+                    learning solutions for its learners right from online learning, upskilling & recruitment <br>
+                    opportunities in world-class quality. And, bestow tech-skills with the comfort of your native <br> language.
+                </p>
+            </section>
+            <section>
+                <b>Follow us on</b>
+                <div class="media" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
+                    <img src="https://www.guvi.in/assets/DpDJVw-s-facebook.webp" alt="" height="50px">
+                    <img src="https://www.guvi.in/assets/CgqVvrZ9-instagram.webp" alt="" height="50px">
+                    <img src="https://www.guvi.in/assets/DoUuF0af-linkedin.webp" alt="" height="50px">
+                </div>
+                <div class="media" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 10px;">
+                    <img src="https://www.guvi.in/assets/Df_J19ru-twitter.webp" alt="" width="50px">
+                    <img src="https://www.guvi.in/assets/C6Exv61E-telegram.webp" alt="" width="50px">
+                    <img src="https://www.guvi.in/assets/P0wSDXgo-youtube.webp" alt="" width="50px">
+                </div>
+            </section>
+            <section style="display: flex; flex-direction: column; gap: 10px;">
+                <button style="border: 2px solid white; background-color: transparent; color: white; padding: 10px 50px; border-radius: 5%;">Refer & Earn</button>
+                <img src="https://www.guvi.in/assets/CMDLg_PY-gplay-mob.webp" alt="" width="170px">
+            </section>
+        </div>
+        <hr width="90%">
+        <section style="margin-top: 20px; display: flex; justify-content: end; gap: 10px; align-items: center; color:grey;">
+            <a href="" style="color: white;">Terms & Conditions</a>
+            <a href="" style="color: white;">Privacy Policy</a>
+            <p>&copy; GUVI Geeks Network Pvt. Ltd.</p>
+        </section>
+    </footer>
+  </div>
+</main>
+

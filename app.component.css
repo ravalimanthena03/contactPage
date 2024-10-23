@@ -1,0 +1,212 @@
+.navbar {
+    height: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    align-items: center;
+    box-shadow: 10px;
+    background-color: white;
+    margin-top: 0;
+}
+
+.navbar>img {
+    margin-left: 20px;
+    height: 50px;
+}
+
+.navbar>ul {
+    margin-left: auto;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.navbar>button {
+    margin: 20px;
+    background: none;
+    border: none;
+}
+
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Contact section container */
+.contact {
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Container for contact info and form */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 45%;
+}
+
+/* Updated contact form styling */
+#contactForm {
+    flex-basis: 45%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 2px solid #ccc; /* Added border */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact info box styling */
+.contactInfo .box {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.contactInfo .box .icon {
+    flex-basis: 20%;
+}
+
+.contactInfo .box .icon img {
+    width: 50px;
+    height: auto;
+}
+
+.contactInfo .box .text {
+    flex-basis: 80%;
+}
+
+.contactInfo .box .text h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.contactInfo .box .text p {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Form styling */
+#contactForm h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#contactForm h2 span {
+    color: lightgreen;
+}
+
+/* Input box styling */
+.inputBox {
+    margin-bottom: 15px;
+}
+
+.inputBox h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.inputBox h3 span {
+    color: red; /* Red '*' marks */
+}
+
+.inputBox input[type="text"],
+.inputBox textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.inputBox textarea {
+    resize: none;
+}
+
+/* Button styling */
+.inputBox button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: lightgreen;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.inputBox button:hover {
+    background-color: #3cb371; /* Slightly darker shade of green */
+}
+
+/* General form and field styling */
+input, textarea {
+    outline: none;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #999;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactInfo, #contactForm {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+section>ul {
+    list-style-type: none;
+}
+
+section>ul>li {
+    margin-top: 10px;
+    text-align: start;
+}
+
+button {
+    background-color: #3cb371; /* Base background color */
+    color: #f4f4f4; /* Text color */
+    padding: 10px 20px; /* Padding for spacing */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
